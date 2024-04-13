@@ -98,3 +98,5 @@ build/*
 *.perspective
 *.perspectivev3 # generado por osx
 .DS_Storeprofile
+.DS_Store
+UserInterfaceState.xcuserstate
