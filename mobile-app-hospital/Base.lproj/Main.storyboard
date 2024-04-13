@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ViewListaClientes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mobile_app_hospital" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ViewListaClientes" id="BYZ-38-t0r" customClass="ViewController" customModule="mobile_app_hospital" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,22 +23,13 @@
             </objects>
             <point key="canvasLocation" x="-53" y="-27"/>
         </scene>
-        <!--ViewAngelo-->
+        <!--ViewListaDoctores-->
         <scene sceneID="GvJ-sU-FWY">
             <objects>
-                <viewController title="ViewAngelo" id="85I-6d-MZi" sceneMemberID="viewController">
+                <viewController title="ViewListaDoctores" id="85I-6d-MZi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="guu-8D-Ie0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Angelo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8j5-q0-o9l">
-                                <rect key="frame" x="175" y="213" width="54" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="s47-Ql-yin"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -46,6 +37,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaS-om-Qad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="709" y="-27"/>
+        </scene>
+        <!--ViewListaCitas-->
+        <scene sceneID="SRn-8h-z1r">
+            <objects>
+                <viewController title="ViewListaCitas" id="MXG-Zo-JRe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MUD-kY-MsP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ow6-eI-3jn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAO-X9-8CA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1473" y="-27"/>
         </scene>
     </scenes>
     <resources>
