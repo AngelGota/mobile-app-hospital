@@ -88,3 +88,13 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+# generado por xcode
+build/*
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.swp
+*~.nib
+*.perspective
+*.perspectivev3 # generado por osx
+.DS_Storeprofile
