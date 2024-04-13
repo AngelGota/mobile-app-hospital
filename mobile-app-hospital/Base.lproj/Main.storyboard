@@ -23,35 +23,29 @@
             </objects>
             <point key="canvasLocation" x="-53" y="-27"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="B5H-jr-FoE">
+        <!--ViewAngelo-->
+        <scene sceneID="GvJ-sU-FWY">
             <objects>
-                <viewController id="dND-22-eJY" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="d11-pm-wXK">
+                <viewController title="ViewAngelo" id="85I-6d-MZi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="guu-8D-Ie0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="D2s-hh-AKw"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Angelo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8j5-q0-o9l">
+                                <rect key="frame" x="175" y="213" width="54" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s47-Ql-yin"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gub-qu-m1V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oaS-om-Qad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="702" y="-27"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="aF7-Br-S1I">
-            <objects>
-                <viewController id="EIs-ZN-gEz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4Lo-xY-Igl">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="1vz-yy-i5d"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8qY-1k-BoO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1451" y="-27"/>
+            <point key="canvasLocation" x="709" y="-27"/>
         </scene>
     </scenes>
     <resources>
