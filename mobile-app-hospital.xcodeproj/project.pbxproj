@@ -13,6 +13,8 @@
 		B7729DEB2BCB3E9E006EA7B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7729DE92BCB3E9E006EA7B1 /* Main.storyboard */; };
 		B7729DED2BCB3E9F006EA7B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7729DEC2BCB3E9F006EA7B1 /* Assets.xcassets */; };
 		B7729DF02BCB3E9F006EA7B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7729DEE2BCB3E9F006EA7B1 /* LaunchScreen.storyboard */; };
+		B7729E002BCB6E97006EA7B1 /* CitaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7729DFF2BCB6E97006EA7B1 /* CitaTableViewCell.swift */; };
+		B7729E022BCB6EB9006EA7B1 /* CitaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7729E012BCB6EB9006EA7B1 /* CitaViewController.swift */; };
 		B79E939C2BCB53BB00A9FEF3 /* DoctoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E939B2BCB53BB00A9FEF3 /* DoctoresTableViewCell.swift */; };
 		B79E939E2BCB540700A9FEF3 /* DoctoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E939D2BCB540700A9FEF3 /* DoctoresViewController.swift */; };
 		B79E93A02BCB627700A9FEF3 /* ClientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E939F2BCB627700A9FEF3 /* ClientesViewController.swift */; };
@@ -28,6 +30,8 @@
 		B7729DEC2BCB3E9F006EA7B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7729DEF2BCB3E9F006EA7B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7729DF12BCB3E9F006EA7B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7729DFF2BCB6E97006EA7B1 /* CitaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitaTableViewCell.swift; sourceTree = "<group>"; };
+		B7729E012BCB6EB9006EA7B1 /* CitaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitaViewController.swift; sourceTree = "<group>"; };
 		B79E939B2BCB53BB00A9FEF3 /* DoctoresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctoresTableViewCell.swift; sourceTree = "<group>"; };
 		B79E939D2BCB540700A9FEF3 /* DoctoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctoresViewController.swift; sourceTree = "<group>"; };
 		B79E939F2BCB627700A9FEF3 /* ClientesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientesViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				B79E939D2BCB540700A9FEF3 /* DoctoresViewController.swift */,
 				B79E939F2BCB627700A9FEF3 /* ClientesViewController.swift */,
 				B79E93A32BCB65FB00A9FEF3 /* ClienteTableViewCell.swift */,
+				B7729DFF2BCB6E97006EA7B1 /* CitaTableViewCell.swift */,
+				B7729E012BCB6EB9006EA7B1 /* CitaViewController.swift */,
 			);
 			path = "mobile-app-hospital";
 			sourceTree = "<group>";
@@ -152,10 +158,12 @@
 			files = (
 				B79E93A42BCB65FB00A9FEF3 /* ClienteTableViewCell.swift in Sources */,
 				B79E939C2BCB53BB00A9FEF3 /* DoctoresTableViewCell.swift in Sources */,
+				B7729E022BCB6EB9006EA7B1 /* CitaViewController.swift in Sources */,
 				B7729DE82BCB3E9E006EA7B1 /* ViewController.swift in Sources */,
 				B79E939E2BCB540700A9FEF3 /* DoctoresViewController.swift in Sources */,
 				B79E93A02BCB627700A9FEF3 /* ClientesViewController.swift in Sources */,
 				B7729DE42BCB3E9E006EA7B1 /* AppDelegate.swift in Sources */,
+				B7729E002BCB6E97006EA7B1 /* CitaTableViewCell.swift in Sources */,
 				B7729DE62BCB3E9E006EA7B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
