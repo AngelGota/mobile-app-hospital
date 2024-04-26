@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="40N-Nc-Dc1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PLq-gc-XeS">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ViewListaClientes-->
+        <!--Lista de pacientes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="ViewListaClientes" id="BYZ-38-t0r" customClass="ClientesViewController" customModule="mobile_app_hospital" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Lista de pacientes" id="BYZ-38-t0r" customClass="ClientesViewController" customModule="mobile_app_hospital" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nwj-9w-kEt">
-                                <rect key="frame" x="0.0" y="112" width="393" height="730"/>
+                                <rect key="frame" x="0.0" y="159" width="393" height="659"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClienteCell" rowHeight="114" id="lXL-Zp-Zlz" customClass="ClienteTableViewCell" customModule="mobile_app_hospital" customModuleProvider="target">
@@ -79,7 +79,7 @@
                                 </prototypes>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="fUH-RQ-2Og">
-                                <rect key="frame" x="0.0" y="56" width="393" height="56"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="9RP-iU-gOR"/>
@@ -98,52 +98,53 @@
                             <constraint firstItem="nwj-9w-kEt" firstAttribute="top" secondItem="fUH-RQ-2Og" secondAttribute="bottom" id="zOY-Nj-BPJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Lista Clientes" id="nLl-wz-8bo">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="Jym-dl-lAB">
-                            <connections>
-                                <segue destination="40N-Nc-Dc1" kind="show" id="E9S-zj-W3v"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="34j-z1-C8k"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Lista de pacientes" id="BfS-Ad-23O"/>
                     <connections>
                         <outlet property="TableView" destination="nwj-9w-kEt" id="W3A-am-aWs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2851" y="-196"/>
+            <point key="canvasLocation" x="4031" y="-196"/>
         </scene>
-        <!--ViewListaDoctores-->
+        <!--Lista de doctores-->
         <scene sceneID="GvJ-sU-FWY">
             <objects>
-                <viewController title="ViewListaDoctores" id="85I-6d-MZi" customClass="DoctoresViewController" customModule="mobile_app_hospital" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Lista de doctores" id="85I-6d-MZi" customClass="DoctoresViewController" customModule="mobile_app_hospital" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="guu-8D-Ie0">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="C1C-Nc-CpQ">
-                                <rect key="frame" x="0.0" y="56" width="393" height="786"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="A18-Uw-kqy">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="85I-6d-MZi" id="Zlu-4W-xje"/>
+                                    </connections>
+                                </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoctoresCell" rowHeight="121" id="c2z-Iy-JFL" userLabel="DoctoresCell" customClass="DoctoresTableViewCell" customModule="mobile_app_hospital" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="121"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoctoresCell" rowHeight="74" id="c2z-Iy-JFL" userLabel="DoctoresCell" customClass="DoctoresTableViewCell" customModule="mobile_app_hospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="94" width="393" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c2z-Iy-JFL" id="vHi-7b-4zL">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="121"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vC6-oM-Yec">
-                                                    <rect key="frame" x="20" y="11" width="353" height="99"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="74"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CI7-z6-jer">
-                                                            <rect key="frame" x="0.0" y="0.0" width="353" height="45.666666666666664"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="393" height="33"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izl-ie-J2T">
-                                                            <rect key="frame" x="0.0" y="53.666666666666671" width="353" height="45.333333333333329"/>
+                                                            <rect key="frame" x="0.0" y="41" width="393" height="33"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -152,10 +153,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="vC6-oM-Yec" firstAttribute="top" secondItem="vHi-7b-4zL" secondAttribute="topMargin" id="Fwh-Gm-bs7"/>
-                                                <constraint firstItem="vC6-oM-Yec" firstAttribute="leading" secondItem="vHi-7b-4zL" secondAttribute="leadingMargin" id="cI1-ci-RnE"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="vC6-oM-Yec" secondAttribute="bottom" id="f8C-Eh-r00"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="vC6-oM-Yec" secondAttribute="trailing" id="v5N-eQ-5LB"/>
+                                                <constraint firstAttribute="trailing" secondItem="vC6-oM-Yec" secondAttribute="trailing" id="8mC-Oj-21j"/>
+                                                <constraint firstItem="vC6-oM-Yec" firstAttribute="leading" secondItem="vHi-7b-4zL" secondAttribute="leading" id="C7P-Ri-VJ1"/>
+                                                <constraint firstAttribute="bottom" secondItem="vC6-oM-Yec" secondAttribute="bottom" id="Zbq-1p-2Bf"/>
+                                                <constraint firstItem="vC6-oM-Yec" firstAttribute="top" secondItem="vHi-7b-4zL" secondAttribute="top" id="wxk-O2-0vg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -175,39 +176,32 @@
                             <constraint firstItem="s47-Ql-yin" firstAttribute="trailing" secondItem="C1C-Nc-CpQ" secondAttribute="trailing" id="vBl-t1-34g"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Lista Doctores" id="y6n-Ia-yJv">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="6oL-GC-h0A">
-                            <connections>
-                                <segue destination="40N-Nc-Dc1" kind="show" id="E60-n9-1cX"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="Dlp-Sd-h1r"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Lista de doctores" id="cM5-Ck-kn8"/>
                     <connections>
                         <outlet property="TableView" destination="C1C-Nc-CpQ" id="LeX-3W-lfM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaS-om-Qad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4821" y="-196"/>
+            <point key="canvasLocation" x="4820.6106870229005" y="-196.47887323943664"/>
         </scene>
-        <!--ViewListaCitas-->
+        <!--Lista de citas-->
         <scene sceneID="SRn-8h-z1r">
             <objects>
-                <viewController title="ViewListaCitas" id="MXG-Zo-JRe" customClass="CitaViewController" customModule="mobile_app_hospital" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Lista de citas" id="MXG-Zo-JRe" customClass="CitaViewController" customModule="mobile_app_hospital" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MUD-kY-MsP">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y95-9g-9hq">
-                                <rect key="frame" x="0.0" y="56" width="393" height="786"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="u81-QQ-Wpl">
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="ShE-vU-0CB">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <connections>
-                                        <outlet property="delegate" destination="MXG-Zo-JRe" id="qNL-sb-BDC"/>
+                                        <outlet property="delegate" destination="MXG-Zo-JRe" id="dMT-wR-5oF"/>
                                     </connections>
                                 </searchBar>
                                 <prototypes>
@@ -260,21 +254,14 @@
                             <constraint firstItem="ow6-eI-3jn" firstAttribute="bottom" secondItem="y95-9g-9hq" secondAttribute="bottom" id="YM1-wL-cNG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Lista de citas" id="GX1-kH-Cmv">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="9my-Hi-rRz">
-                            <connections>
-                                <segue destination="40N-Nc-Dc1" kind="show" id="YgH-UV-hYZ"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="xTR-1q-ERK"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Lista de citas" id="xcN-Ou-07p"/>
                     <connections>
                         <outlet property="TableView" destination="y95-9g-9hq" id="X9g-K9-RgO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAO-X9-8CA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6773" y="-196"/>
+            <point key="canvasLocation" x="5631" y="-196"/>
         </scene>
         <!--ViewInicial-->
         <scene sceneID="aiR-RV-7mg">
@@ -290,52 +277,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Oe-2U-cbP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4822" y="-1930"/>
+            <point key="canvasLocation" x="4227" y="-1918"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Kr4-eP-3a2">
+        <!--Creditos-->
+        <scene sceneID="fAA-T3-SJb">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rkf-f3-g3Y" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Beb-5E-i7j"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SYJ-Ec-Ztt">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="85I-6d-MZi" kind="relationship" relationship="rootViewController" id="vsW-Sc-zpa"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DBd-1e-pNI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController title="Creditos" id="qKV-u6-WRL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3B9-yO-il9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1Um-3x-8WV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Creditos" id="Wgx-jE-ShW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhL-L8-1Pa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3894" y="-196"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="MLG-LV-ouY">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VqP-3A-kcp" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Ota-AV-h1D"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dsB-uM-MKq">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Kc4-7k-WPP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lfi-wK-ihA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1924" y="-196"/>
+            <point key="canvasLocation" x="6523" y="-196"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="E3a-cr-PLl">
             <objects>
                 <viewController id="40N-Nc-Dc1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SFp-3f-uaO">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stA-2p-TBz">
@@ -344,7 +309,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Lista de doctores"/>
                                 <connections>
-                                    <segue destination="rkf-f3-g3Y" kind="show" id="fqf-u6-fb2"/>
+                                    <segue destination="85I-6d-MZi" kind="show" id="wz4-eE-hGD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOSPITAL SYSTEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPU-iO-lS2">
@@ -360,7 +325,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Lista de pacientes"/>
                                 <connections>
-                                    <segue destination="VqP-3A-kcp" kind="show" id="ZmH-sq-9pW"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="pdm-Ni-gYU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bY8-sh-ryQ">
@@ -369,7 +334,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Lista de citas"/>
                                 <connections>
-                                    <segue destination="eGo-EU-fS0" kind="show" id="l8F-hX-7CK"/>
+                                    <segue destination="MXG-Zo-JRe" kind="show" id="74m-BK-7b7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myC-IP-wyx">
@@ -377,6 +342,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Creditos"/>
+                                <connections>
+                                    <segue destination="qKV-u6-WRL" kind="show" id="wBY-wv-lTN"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HospitalSystem v1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGz-Vc-h0M">
                                 <rect key="frame" x="119" y="797" width="154" height="21"/>
@@ -389,56 +357,34 @@
                         <viewLayoutGuide key="safeArea" id="P7b-Lu-ZJ3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JM0-N8-sqs"/>
+                    <navigationItem key="navigationItem" id="JM0-N8-sqs">
+                        <barButtonItem key="backBarButtonItem" title="Volver" id="kiw-tJ-hwm"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0iB-kH-IgL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4821" y="-1118"/>
+            <point key="canvasLocation" x="5218" y="-961"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="CwY-sK-ySd">
+        <scene sceneID="JBE-V3-rVt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eGo-EU-fS0" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PLq-gc-XeS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="r4x-08-UEH"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZMF-s8-g3x">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="MXG-Zo-JRe" kind="relationship" relationship="rootViewController" id="UbT-gd-iNo"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xTa-5d-tlH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5847" y="-196"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ePh-zQ-yWH">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p0A-wI-KC9" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BE3-uC-zMb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kYm-7P-O0q">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2cr-R3-YHA" kind="relationship" relationship="rootViewController" id="bKE-T5-MSS"/>
+                        <segue destination="40N-Nc-Dc1" kind="relationship" relationship="rootViewController" id="iHf-Qa-k34"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R0Z-tq-1b0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6vo-td-w9k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3923" y="-1930"/>
+            <point key="canvasLocation" x="4227" y="-961"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="E9S-zj-W3v"/>
-    </inferredMetricsTieBreakers>
     <resources>
-        <image name="chevron.backward" catalog="system" width="97" height="128"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
