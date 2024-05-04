@@ -17,6 +17,7 @@ class DoctoresViewController: UIViewController, UISearchBarDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        listarDoctor()
         buscadorSearchBar.delegate = self
         doctoresTableView.dataSource = self
     }
@@ -24,10 +25,17 @@ class DoctoresViewController: UIViewController, UISearchBarDelegate, UITableView
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
         guard let criterioBusqueda = searchBar.text else {return}
+        if criterioBusqueda.isEmpty{
+            listarDoctor()
+            self.doctoresTableView.reloadData()
+            return  
+        }
         buscarDoctor(criterio: criterioBusqueda)
     }
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
+        listarDoctor()
+        self.doctoresTableView.reloadData()
     }
     
     func buscarDoctor(criterio : String){
@@ -74,5 +82,34 @@ class DoctoresViewController: UIViewController, UISearchBarDelegate, UITableView
         
         return cell
     }
-
+    
+    func listarDoctor(){
+        //https://jsonplaceholder.typicode.com/users/
+        let urlBuscar = String("https://jsonplaceholder.typicode.com/users")
+        
+        guard let url = URL(string : urlBuscar) else {return}
+        
+        let task = URLSession.shared.dataTask(with: url) {
+            data, response, error in
+            
+            guard let data = data, let response = response as? HTTPURLResponse, error == nil else{
+                print("Error: ", error ?? "" )
+                return
+            }
+            let status = response.statusCode
+            guard(200...299).contains(status) else{
+                print("Reponse Code", status)
+                return
+            }
+            if let doctorArray = try? JSONDecoder().decode([Doctor].self, from: data) {
+                self.DoctoresList = doctorArray
+                DispatchQueue.main.async {
+                    self.doctoresTableView.reloadData()
+                }
+            } else {
+                print("Error decoding JSON data")
+            }
+        }
+        task.resume()
+    }
 }
