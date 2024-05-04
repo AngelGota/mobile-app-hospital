@@ -20,6 +20,7 @@
 		B79E93A42BCB65FB00A9FEF3 /* ClienteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E93A32BCB65FB00A9FEF3 /* ClienteTableViewCell.swift */; };
 		B7A676532BE69EDF005A9CD0 /* DoctorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A676522BE69EDF005A9CD0 /* DoctorResponse.swift */; };
 		B7A676572BE6A34C005A9CD0 /* DoctoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A676562BE6A34C005A9CD0 /* DoctoresViewController.swift */; };
+		B7A676592BE6B88E005A9CD0 /* DetalleDoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A676582BE6B88E005A9CD0 /* DetalleDoctorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		B79E93A32BCB65FB00A9FEF3 /* ClienteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClienteTableViewCell.swift; sourceTree = "<group>"; };
 		B7A676522BE69EDF005A9CD0 /* DoctorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorResponse.swift; sourceTree = "<group>"; };
 		B7A676562BE6A34C005A9CD0 /* DoctoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctoresViewController.swift; sourceTree = "<group>"; };
+		B7A676582BE6B88E005A9CD0 /* DetalleDoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDoctorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				B79E939B2BCB53BB00A9FEF3 /* DoctoresTableViewCell.swift */,
 				B7A676522BE69EDF005A9CD0 /* DoctorResponse.swift */,
 				B7A676562BE6A34C005A9CD0 /* DoctoresViewController.swift */,
+				B7A676582BE6B88E005A9CD0 /* DetalleDoctorViewController.swift */,
 			);
 			path = Doctores;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				B7729E022BCB6EB9006EA7B1 /* CitaViewController.swift in Sources */,
 				B7729DE82BCB3E9E006EA7B1 /* ViewController.swift in Sources */,
 				B79E93A02BCB627700A9FEF3 /* ClientesViewController.swift in Sources */,
+				B7A676592BE6B88E005A9CD0 /* DetalleDoctorViewController.swift in Sources */,
 				B7729DE42BCB3E9E006EA7B1 /* AppDelegate.swift in Sources */,
 				B7A676572BE6A34C005A9CD0 /* DoctoresViewController.swift in Sources */,
 				B7729E002BCB6E97006EA7B1 /* CitaTableViewCell.swift in Sources */,
