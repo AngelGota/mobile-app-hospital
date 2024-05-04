@@ -534,8 +534,30 @@
                     <view key="view" contentMode="scaleToFill" id="n71-23-l1I">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="u2N-Vr-ada">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="3eP-xh-65y" userLabel="celda">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3eP-xh-65y" id="tZR-4v-t4x">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="rcx-ef-p7d"/>
                         <color key="backgroundColor" red="0.031372550870000002" green="0.031372550870000002" blue="0.094117648900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="rcx-ef-p7d" firstAttribute="bottom" secondItem="u2N-Vr-ada" secondAttribute="bottom" id="LHq-Yp-vaU"/>
+                            <constraint firstItem="u2N-Vr-ada" firstAttribute="top" secondItem="rcx-ef-p7d" secondAttribute="top" id="pix-Pv-Fav"/>
+                            <constraint firstItem="rcx-ef-p7d" firstAttribute="trailing" secondItem="u2N-Vr-ada" secondAttribute="trailing" id="sXy-iW-8hk"/>
+                            <constraint firstItem="u2N-Vr-ada" firstAttribute="leading" secondItem="rcx-ef-p7d" secondAttribute="leading" id="wjc-Qn-AxH"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Seguridad" image="figure.2.circle.fill" catalog="system" id="mdz-X6-D8c"/>
                 </viewController>
@@ -725,6 +747,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
