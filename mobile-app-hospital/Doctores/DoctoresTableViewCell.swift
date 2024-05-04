@@ -10,9 +10,8 @@ import UIKit
 class DoctoresTableViewCell: UITableViewCell {
 
     
-    @IBOutlet weak var NombreDoctor: UILabel!
-    
-    @IBOutlet weak var DNIDoctoro: UILabel!
+    @IBOutlet weak var NombreDoctorLabel: UILabel!
+    @IBOutlet weak var DniDoctorLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,7 +21,6 @@ class DoctoresTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
 
 }
