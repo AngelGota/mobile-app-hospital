@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DoctoresViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource {
+class DoctoresViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate {
     
 
     @IBOutlet weak var doctoresTableView: UITableView!
@@ -19,6 +19,7 @@ class DoctoresViewController: UIViewController, UISearchBarDelegate, UITableView
         super.viewDidLoad()
         listarDoctor()
         buscadorSearchBar.delegate = self
+        doctoresTableView.delegate = self
         doctoresTableView.dataSource = self
     }
     
@@ -68,35 +69,6 @@ class DoctoresViewController: UIViewController, UISearchBarDelegate, UITableView
         task.resume()
     }
     
-    func DetalleDoctor(by criterion: String, completion: @escaping (Result<Doctor, Error>) -> Void) {
-      let urlBuscar = String(format: "%@%@", "https://jsonplaceholder.typicode.com/users/?name=", criterion)
-      
-      guard let url = URL(string: urlBuscar) else {
-        completion(.failure(NSError(domain: "URL Error", code: -1, userInfo: nil)))
-        return
-      }
-      
-      let task = URLSession.shared.dataTask(with: url) { data, response, error in
-        guard let data = data, let response = response as? HTTPURLResponse, error == nil else {
-          completion(.failure(error ?? NSError(domain: "Network Error", code: -2, userInfo: nil)))
-          return
-        }
-        
-        guard (200...299).contains(response.statusCode) else {
-          completion(.failure(NSError(domain: "API Error", code: response.statusCode, userInfo: nil)))
-          return
-        }
-        
-        do {
-          let doctor = try JSONDecoder().decode(Doctor.self, from: data)
-          completion(.success(doctor))
-        } catch {
-          completion(.failure(error))
-        }
-      }
-      
-      task.resume()
-    }
     
     func listarDoctor(){
         //https://jsonplaceholder.typicode.com/users/
@@ -142,8 +114,22 @@ class DoctoresViewController: UIViewController, UISearchBarDelegate, UITableView
         
         return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let doctor = DoctoresList[indexPath.row]
-        print(doctor.email ?? "")
-    }
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "DetalleDoctorViewController") as! DetalleDoctorViewController
+        vc.id = String(doctor.id)
+        vc.dni = doctor.address.zipcode
+        vc.nombre = doctor.name
+        vc.user = doctor.username
+        vc.email = doctor.email
+        vc.direccion = String(doctor.address.city + ", " + doctor.address.street + ", " + doctor.address.suite)
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        self.present(vc, animated: true, completion: nil)
+        
+        }
+                                      
 }
+
