@@ -68,19 +68,34 @@ class DoctoresViewController: UIViewController, UISearchBarDelegate, UITableView
         task.resume()
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DoctoresList.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DoctoresCell", for: indexPath) as! DoctoresTableViewCell
+    func DetalleDoctor(by criterion: String, completion: @escaping (Result<Doctor, Error>) -> Void) {
+      let urlBuscar = String(format: "%@%@", "https://jsonplaceholder.typicode.com/users/?name=", criterion)
+      
+      guard let url = URL(string: urlBuscar) else {
+        completion(.failure(NSError(domain: "URL Error", code: -1, userInfo: nil)))
+        return
+      }
+      
+      let task = URLSession.shared.dataTask(with: url) { data, response, error in
+        guard let data = data, let response = response as? HTTPURLResponse, error == nil else {
+          completion(.failure(error ?? NSError(domain: "Network Error", code: -2, userInfo: nil)))
+          return
+        }
         
-        let doc = DoctoresList[indexPath.row]
+        guard (200...299).contains(response.statusCode) else {
+          completion(.failure(NSError(domain: "API Error", code: response.statusCode, userInfo: nil)))
+          return
+        }
         
-        cell.NombreDoctorLabel .text = doc.name
-        cell.DniDoctorLabel .text = doc.address.city
-        
-        return cell
+        do {
+          let doctor = try JSONDecoder().decode(Doctor.self, from: data)
+          completion(.success(doctor))
+        } catch {
+          completion(.failure(error))
+        }
+      }
+      
+      task.resume()
     }
     
     func listarDoctor(){
@@ -111,5 +126,24 @@ class DoctoresViewController: UIViewController, UISearchBarDelegate, UITableView
             }
         }
         task.resume()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return DoctoresList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DoctoresCell", for: indexPath) as! DoctoresTableViewCell
+        
+        let doc = DoctoresList[indexPath.row]
+        
+        cell.NombreDoctorLabel .text = doc.name
+        cell.DniDoctorLabel .text = ("DNI: " + doc.address.zipcode)
+        
+        return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        let doctor = DoctoresList[indexPath.row]
+        print(doctor.email ?? "")
     }
 }
