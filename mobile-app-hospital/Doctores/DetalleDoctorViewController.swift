@@ -29,11 +29,11 @@ class DetalleDoctorViewController: UIViewController {
         super.viewDidLoad()
 
         idDoctorLabel.text = id
-        dniDoctorLabel.text = id
-        nombreDoctorLabel.text = id
-        userDoctorLabel.text = id
-        emailDoctorLabel.text = id
-        direccionDotorLabel.text = id
+        dniDoctorLabel.text = dni
+        nombreDoctorLabel.text = nombre
+        userDoctorLabel.text = user
+        emailDoctorLabel.text = email
+        direccionDotorLabel.text = direccion
         // Do any additional setup after loading the view.
     }
     
