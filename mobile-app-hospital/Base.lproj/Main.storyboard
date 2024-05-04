@@ -154,10 +154,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="C1C-Nc-CpQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tM4-lD-pji">
                                 <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <color key="backgroundColor" red="0.031372550870000002" green="0.031372550870000002" blue="0.094117648900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="62A-bm-FMW">
+                                <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="F2z-tP-LOh">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <color key="barTintColor" red="0.031372550870000002" green="0.031372550870000002" blue="0.094117648900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -167,27 +167,27 @@
                                         <string>Title</string>
                                     </scopeButtonTitles>
                                     <connections>
-                                        <outlet property="delegate" destination="85I-6d-MZi" id="QIn-yi-Fko"/>
+                                        <outlet property="delegate" destination="85I-6d-MZi" id="ka3-xf-dh3"/>
                                     </connections>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoctoresCell" rowHeight="100" id="c2z-Iy-JFL" userLabel="DoctoresCell" customClass="DoctoresTableViewCell" customModule="mobile_app_hospital" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoctoresCell" rowHeight="100" id="gnb-sf-Z4c" customClass="DoctoresTableViewCell" customModule="mobile_app_hospital" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="106" width="393" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c2z-Iy-JFL" id="vHi-7b-4zL">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gnb-sf-Z4c" id="aYU-Yy-Xak">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KCm-EU-1DJ">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hng-DT-txy">
                                                     <rect key="frame" x="20" y="11" width="353" height="78"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CI7-z6-jer">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85Q-Ln-jEP">
                                                             <rect key="frame" x="0.0" y="0.0" width="353" height="35"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izl-ie-J2T">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3c-DL-VeB">
                                                             <rect key="frame" x="0.0" y="43" width="353" height="35"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -197,16 +197,16 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="KCm-EU-1DJ" firstAttribute="leading" secondItem="vHi-7b-4zL" secondAttribute="leadingMargin" id="SYT-ld-5BS"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="KCm-EU-1DJ" secondAttribute="trailing" id="h31-k3-V3P"/>
-                                                <constraint firstItem="KCm-EU-1DJ" firstAttribute="top" secondItem="vHi-7b-4zL" secondAttribute="topMargin" id="ytc-fG-1Gq"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="KCm-EU-1DJ" secondAttribute="bottom" id="yyd-IE-kgQ"/>
+                                                <constraint firstItem="hng-DT-txy" firstAttribute="top" secondItem="aYU-Yy-Xak" secondAttribute="topMargin" id="07x-tM-lSd"/>
+                                                <constraint firstItem="hng-DT-txy" firstAttribute="leading" secondItem="aYU-Yy-Xak" secondAttribute="leadingMargin" id="7Hx-hK-1GK"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hng-DT-txy" secondAttribute="trailing" id="lfk-53-eSA"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hng-DT-txy" secondAttribute="bottom" id="wzt-mh-qqg"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.02745098248" green="0.02745098248" blue="0.086274504660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.031372550870000002" green="0.031372550870000002" blue="0.094117648900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
-                                            <outlet property="DNIDoctoro" destination="izl-ie-J2T" id="DH5-6U-BzR"/>
-                                            <outlet property="NombreDoctor" destination="CI7-z6-jer" id="LPu-XQ-bVg"/>
+                                            <outlet property="DniDoctorLabel" destination="K3c-DL-VeB" id="d45-cE-IF6"/>
+                                            <outlet property="NombreDoctorLabel" destination="85Q-Ln-jEP" id="UZx-X0-uwO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -215,20 +215,21 @@
                         <viewLayoutGuide key="safeArea" id="s47-Ql-yin"/>
                         <color key="backgroundColor" red="0.031372550870000002" green="0.031372550870000002" blue="0.094117648900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="s47-Ql-yin" firstAttribute="bottom" secondItem="C1C-Nc-CpQ" secondAttribute="bottom" id="VWM-an-667"/>
-                            <constraint firstItem="C1C-Nc-CpQ" firstAttribute="leading" secondItem="s47-Ql-yin" secondAttribute="leading" id="aDQ-uD-nyE"/>
-                            <constraint firstItem="C1C-Nc-CpQ" firstAttribute="top" secondItem="s47-Ql-yin" secondAttribute="top" id="j1D-R8-Q2B"/>
-                            <constraint firstItem="s47-Ql-yin" firstAttribute="trailing" secondItem="C1C-Nc-CpQ" secondAttribute="trailing" id="vBl-t1-34g"/>
+                            <constraint firstItem="s47-Ql-yin" firstAttribute="trailing" secondItem="tM4-lD-pji" secondAttribute="trailing" id="BrS-4G-B9v"/>
+                            <constraint firstItem="tM4-lD-pji" firstAttribute="leading" secondItem="s47-Ql-yin" secondAttribute="leading" id="Nyd-k0-L7W"/>
+                            <constraint firstItem="s47-Ql-yin" firstAttribute="bottom" secondItem="tM4-lD-pji" secondAttribute="bottom" id="OYj-Fg-N9m"/>
+                            <constraint firstItem="tM4-lD-pji" firstAttribute="top" secondItem="s47-Ql-yin" secondAttribute="top" id="WHP-kZ-JZp"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Medicos" image="cross.fill" catalog="system" id="I8p-VM-JAm"/>
                     <connections>
-                        <outlet property="TableView" destination="C1C-Nc-CpQ" id="LeX-3W-lfM"/>
+                        <outlet property="buscadorSearchBar" destination="F2z-tP-LOh" id="5uf-Lc-GT5"/>
+                        <outlet property="doctoresTableView" destination="tM4-lD-pji" id="jtX-2F-yAD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaS-om-Qad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4511" y="4"/>
+            <point key="canvasLocation" x="4510.6870229007636" y="3.5211267605633805"/>
         </scene>
         <!--Lista de pacientes-->
         <scene sceneID="tne-QT-ifu">
