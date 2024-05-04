@@ -16,7 +16,6 @@
 		B7729E002BCB6E97006EA7B1 /* CitaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7729DFF2BCB6E97006EA7B1 /* CitaTableViewCell.swift */; };
 		B7729E022BCB6EB9006EA7B1 /* CitaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7729E012BCB6EB9006EA7B1 /* CitaViewController.swift */; };
 		B79E939C2BCB53BB00A9FEF3 /* DoctoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E939B2BCB53BB00A9FEF3 /* DoctoresTableViewCell.swift */; };
-		B79E939E2BCB540700A9FEF3 /* DoctoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E939D2BCB540700A9FEF3 /* DoctoresViewController.swift */; };
 		B79E93A02BCB627700A9FEF3 /* ClientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E939F2BCB627700A9FEF3 /* ClientesViewController.swift */; };
 		B79E93A42BCB65FB00A9FEF3 /* ClienteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E93A32BCB65FB00A9FEF3 /* ClienteTableViewCell.swift */; };
 		B7A676532BE69EDF005A9CD0 /* DoctorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A676522BE69EDF005A9CD0 /* DoctorResponse.swift */; };
@@ -34,7 +33,6 @@
 		B7729DFF2BCB6E97006EA7B1 /* CitaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitaTableViewCell.swift; sourceTree = "<group>"; };
 		B7729E012BCB6EB9006EA7B1 /* CitaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitaViewController.swift; sourceTree = "<group>"; };
 		B79E939B2BCB53BB00A9FEF3 /* DoctoresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctoresTableViewCell.swift; sourceTree = "<group>"; };
-		B79E939D2BCB540700A9FEF3 /* DoctoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctoresViewController.swift; sourceTree = "<group>"; };
 		B79E939F2BCB627700A9FEF3 /* ClientesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientesViewController.swift; sourceTree = "<group>"; };
 		B79E93A32BCB65FB00A9FEF3 /* ClienteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClienteTableViewCell.swift; sourceTree = "<group>"; };
 		B7A676522BE69EDF005A9CD0 /* DoctorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorResponse.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 		B7A676512BE69E28005A9CD0 /* Doctores */ = {
 			isa = PBXGroup;
 			children = (
-				B79E939D2BCB540700A9FEF3 /* DoctoresViewController.swift */,
 				B79E939B2BCB53BB00A9FEF3 /* DoctoresTableViewCell.swift */,
 				B7A676522BE69EDF005A9CD0 /* DoctorResponse.swift */,
 			);
@@ -172,7 +169,6 @@
 				B79E939C2BCB53BB00A9FEF3 /* DoctoresTableViewCell.swift in Sources */,
 				B7729E022BCB6EB9006EA7B1 /* CitaViewController.swift in Sources */,
 				B7729DE82BCB3E9E006EA7B1 /* ViewController.swift in Sources */,
-				B79E939E2BCB540700A9FEF3 /* DoctoresViewController.swift in Sources */,
 				B79E93A02BCB627700A9FEF3 /* ClientesViewController.swift in Sources */,
 				B7729DE42BCB3E9E006EA7B1 /* AppDelegate.swift in Sources */,
 				B7729E002BCB6E97006EA7B1 /* CitaTableViewCell.swift in Sources */,
