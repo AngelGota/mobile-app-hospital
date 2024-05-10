@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GXw-YS-NIQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oE6-8i-EhG">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -82,7 +82,7 @@
         <!--IniciarSesion-->
         <scene sceneID="1D1-DR-qWR">
             <objects>
-                <viewController title="IniciarSesion" id="XkP-D6-Q4l" sceneMemberID="viewController">
+                <viewController title="IniciarSesion" id="XkP-D6-Q4l" customClass="LoginViewController" customModule="mobile_app_hospital" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s8R-TP-3Ab">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,6 +124,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Iniciar sesion"/>
+                                <connections>
+                                    <action selector="LoginAction:" destination="XkP-D6-Q4l" eventType="touchUpInside" id="xak-Wb-FeV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StT-nI-TKR">
                                 <rect key="frame" x="121" y="526" width="151" height="35"/>
@@ -545,7 +548,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8C9-0o-bvq">
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.031372550870000002" green="0.031372550870000002" blue="0.094117648900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellSeguridad" rowHeight="82" id="I0A-L7-TGj" customClass="ColSeguridadTableViewCell" customModule="mobile_app_hospital" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="82"/>
@@ -560,16 +563,17 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqX-bS-37D">
                                                             <rect key="frame" x="0.0" y="0.0" width="353" height="26"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aID-yd-Acq">
                                                             <rect key="frame" x="0.0" y="34" width="353" height="26"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <color key="backgroundColor" red="0.031372550870000002" green="0.031372550870000002" blue="0.094117648900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
@@ -611,23 +615,6 @@
             </objects>
             <point key="canvasLocation" x="7840.4580152671751" y="3.5211267605633805"/>
         </scene>
-        <!--Creditos-->
-        <scene sceneID="fAA-T3-SJb">
-            <objects>
-                <viewController title="Creditos" id="qKV-u6-WRL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3B9-yO-il9">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="1Um-3x-8WV"/>
-                        <color key="backgroundColor" red="0.031372550870000002" green="0.031372550870000002" blue="0.094117648900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Configuracion" image="gearshape.fill" catalog="system" id="0rx-dx-poh"/>
-                    <navigationItem key="navigationItem" title="Creditos" id="Wgx-jE-ShW"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zhL-L8-1Pa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8553.4351145038163" y="3.5211267605633805"/>
-        </scene>
         <!--Botonera-->
         <scene sceneID="E3a-cr-PLl">
             <objects>
@@ -637,7 +624,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DASHBOARD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPU-iO-lS2">
-                                <rect key="frame" x="24" y="68" width="144" height="40"/>
+                                <rect key="frame" x="16" y="80" width="144" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="22"/>
                                 <color key="textColor" name="AccentColor"/>
@@ -648,6 +635,9 @@
                         <color key="backgroundColor" red="0.031372550870000002" green="0.031372550870000002" blue="0.094117648900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="sgq-gB-vkv"/>
+                    <navigationItem key="navigationItem" title="DASHBOARD" id="GTE-nA-c5L">
+                        <barButtonItem key="backBarButtonItem" title="Cerrar sesion" id="6ep-2f-qsh"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0iB-kH-IgL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -656,7 +646,7 @@
         <!--CrearCuenta-->
         <scene sceneID="COB-90-AGt">
             <objects>
-                <viewController title="CrearCuenta" id="er1-3u-pwV" sceneMemberID="viewController">
+                <viewController title="CrearCuenta" id="er1-3u-pwV" customClass="LoginViewController" customModule="mobile_app_hospital" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YjW-kv-3Qk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -712,12 +702,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Crear cuenta"/>
+                                <connections>
+                                    <segue destination="XkP-D6-Q4l" kind="show" id="Cs2-CY-BSH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvR-Il-8tA">
                                 <rect key="frame" x="118" y="602" width="160" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Tengo una cuenta"/>
+                                <connections>
+                                    <segue destination="XkP-D6-Q4l" kind="show" id="zkE-Kn-I73"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YHn-R5-xvx"/>
@@ -732,7 +728,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="j2t-qp-9y5">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="GXw-YS-NIQ" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="DashBoardViewController" automaticallyAdjustsScrollViewInsets="NO" id="GXw-YS-NIQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="71c-Fp-ucR">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -746,7 +742,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="bTa-QQ-O4P"/>
                         <segue destination="MXG-Zo-JRe" kind="relationship" relationship="viewControllers" id="KJC-iD-Auf"/>
                         <segue destination="dgG-L0-wsQ" kind="relationship" relationship="viewControllers" id="VVO-xQ-Trs"/>
-                        <segue destination="qKV-u6-WRL" kind="relationship" relationship="viewControllers" id="IEU-i7-j46"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaM-bS-tj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -798,7 +793,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lnJ-6j-bzN"/>
+        <segue reference="6qU-A3-AX8"/>
+        <segue reference="yC1-0G-9Hn"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="107"/>
@@ -807,7 +803,6 @@
         <image name="cross.fill" catalog="system" width="128" height="116"/>
         <image name="figure.2.circle.fill" catalog="system" width="128" height="123"/>
         <image name="figure.child.and.lock.open.fill" catalog="system" width="128" height="113"/>
-        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="lock.shield" catalog="system" width="128" height="119"/>
         <image name="lock.shield.fill" catalog="system" width="128" height="119"/>
@@ -818,9 +813,6 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

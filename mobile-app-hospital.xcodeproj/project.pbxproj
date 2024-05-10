@@ -10,6 +10,7 @@
 		B71F2C382BE6E61C00A83324 /* ColSeguridadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F2C372BE6E61C00A83324 /* ColSeguridadViewController.swift */; };
 		B71F2C3A2BE6E6B300A83324 /* ColSeguridadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F2C392BE6E6B300A83324 /* ColSeguridadTableViewCell.swift */; };
 		B71F2C3D2BE6F33C00A83324 /* SeguridadDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B71F2C3B2BE6F33C00A83324 /* SeguridadDataModel.xcdatamodeld */; };
+		B75E9C302BED991F009BB42D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75E9C2F2BED991F009BB42D /* LoginViewController.swift */; };
 		B7729DE42BCB3E9E006EA7B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7729DE32BCB3E9E006EA7B1 /* AppDelegate.swift */; };
 		B7729DE62BCB3E9E006EA7B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7729DE52BCB3E9E006EA7B1 /* SceneDelegate.swift */; };
 		B7729DE82BCB3E9E006EA7B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7729DE72BCB3E9E006EA7B1 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		B71F2C372BE6E61C00A83324 /* ColSeguridadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColSeguridadViewController.swift; sourceTree = "<group>"; };
 		B71F2C392BE6E6B300A83324 /* ColSeguridadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColSeguridadTableViewCell.swift; sourceTree = "<group>"; };
 		B71F2C3C2BE6F33C00A83324 /* SeguridadDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeguridadDataModel.xcdatamodel; sourceTree = "<group>"; };
+		B75E9C2F2BED991F009BB42D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B7729DE02BCB3E9E006EA7B1 /* mobile-app-hospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-app-hospital.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7729DE32BCB3E9E006EA7B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7729DE52BCB3E9E006EA7B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B75E9C2B2BED98E0009BB42D /* Cita */ = {
+			isa = PBXGroup;
+			children = (
+				B7729DFF2BCB6E97006EA7B1 /* CitaTableViewCell.swift */,
+				B7729E012BCB6EB9006EA7B1 /* CitaViewController.swift */,
+			);
+			path = Cita;
+			sourceTree = "<group>";
+		};
+		B75E9C2C2BED98EF009BB42D /* Clientes */ = {
+			isa = PBXGroup;
+			children = (
+				B79E939F2BCB627700A9FEF3 /* ClientesViewController.swift */,
+				B79E93A32BCB65FB00A9FEF3 /* ClienteTableViewCell.swift */,
+			);
+			path = Clientes;
+			sourceTree = "<group>";
+		};
+		B75E9C2D2BED98FD009BB42D /* Seguridad */ = {
+			isa = PBXGroup;
+			children = (
+				B71F2C372BE6E61C00A83324 /* ColSeguridadViewController.swift */,
+				B71F2C392BE6E6B300A83324 /* ColSeguridadTableViewCell.swift */,
+			);
+			path = Seguridad;
+			sourceTree = "<group>";
+		};
+		B75E9C2E2BED9908009BB42D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B75E9C2F2BED991F009BB42D /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		B7729DD72BCB3E9E006EA7B1 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +115,10 @@
 		B7729DE22BCB3E9E006EA7B1 /* mobile-app-hospital */ = {
 			isa = PBXGroup;
 			children = (
+				B75E9C2E2BED9908009BB42D /* Login */,
+				B75E9C2D2BED98FD009BB42D /* Seguridad */,
+				B75E9C2C2BED98EF009BB42D /* Clientes */,
+				B75E9C2B2BED98E0009BB42D /* Cita */,
 				B7A676512BE69E28005A9CD0 /* Doctores */,
 				B7729DE32BCB3E9E006EA7B1 /* AppDelegate.swift */,
 				B7729DE52BCB3E9E006EA7B1 /* SceneDelegate.swift */,
@@ -86,12 +127,6 @@
 				B7729DEC2BCB3E9F006EA7B1 /* Assets.xcassets */,
 				B7729DEE2BCB3E9F006EA7B1 /* LaunchScreen.storyboard */,
 				B7729DF12BCB3E9F006EA7B1 /* Info.plist */,
-				B79E939F2BCB627700A9FEF3 /* ClientesViewController.swift */,
-				B79E93A32BCB65FB00A9FEF3 /* ClienteTableViewCell.swift */,
-				B7729DFF2BCB6E97006EA7B1 /* CitaTableViewCell.swift */,
-				B7729E012BCB6EB9006EA7B1 /* CitaViewController.swift */,
-				B71F2C372BE6E61C00A83324 /* ColSeguridadViewController.swift */,
-				B71F2C392BE6E6B300A83324 /* ColSeguridadTableViewCell.swift */,
 				B71F2C3B2BE6F33C00A83324 /* SeguridadDataModel.xcdatamodeld */,
 			);
 			path = "mobile-app-hospital";
@@ -182,6 +217,7 @@
 				B79E93A42BCB65FB00A9FEF3 /* ClienteTableViewCell.swift in Sources */,
 				B71F2C3A2BE6E6B300A83324 /* ColSeguridadTableViewCell.swift in Sources */,
 				B7A676532BE69EDF005A9CD0 /* DoctorResponse.swift in Sources */,
+				B75E9C302BED991F009BB42D /* LoginViewController.swift in Sources */,
 				B79E939C2BCB53BB00A9FEF3 /* DoctoresTableViewCell.swift in Sources */,
 				B7729E022BCB6EB9006EA7B1 /* CitaViewController.swift in Sources */,
 				B71F2C382BE6E61C00A83324 /* ColSeguridadViewController.swift in Sources */,
